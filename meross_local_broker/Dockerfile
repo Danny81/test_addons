@@ -68,7 +68,7 @@ RUN apt-get update \
     else \
     echo 'NOT VALID BUILD'; exit 1; \
     fi \
-  && curl https://dl.google.com/go/go1.16.3.${GOOS}-${GOARCH}.tar.gz --output /tmp/go/go.tar.gz \
+  && curl https://dl.google.com/go/go1.16.3.linux-armv6l.tar.gz --output /tmp/go/go.tar.gz \
   && tar -C /usr/local -xzf /tmp/go/go.tar.gz \
   && export PATH=$PATH:/usr/local/go/bin \
   \
