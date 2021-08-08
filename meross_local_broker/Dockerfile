@@ -56,9 +56,9 @@ RUN apt-get update \
   && mkdir -p /tmp/go \
   && \
     if [ "${BUILD_ARCH}" = "armhf" ]; then \
-    export GOOS=linux ; export GOARCH=arm ; \
+    export GOOS=linux ; export GOARCH=armv6l ; \
     elif [ "${BUILD_ARCH}" = "armv7" ]; then \
-    export GOOS=linux ; export GOARM=7 ; export GOARCH=arm ; \
+    export GOOS=linux ; export GOARM=7 ; export GOARCH=armv6l ; \
     elif [ "${BUILD_ARCH}" = "aarch64" ]; then \
     export GOOS=linux ; export GOARCH=arm64 ; \
     elif [ "${BUILD_ARCH}" = "i386" ]; then \
