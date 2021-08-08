@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start local mqtt agent service
+# ==============================================================================
+bashio::log.info "Starting the mqtt client agent daemon"
+exec /usr/local/bin/broker.sh

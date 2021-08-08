@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start nginx service
+# ==============================================================================
+bashio::log.info "Starting the nginx daemon"
+
+# Create required folders
+exec nginx -c /etc/nginx/ingress.conf
