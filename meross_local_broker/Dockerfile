@@ -1,4 +1,4 @@
-ARG BUILD_FROM=homeassistant/amd64-base-debian
+ARG BUILD_FROM=homeassistant/armv7-base-debian
 FROM ${BUILD_FROM}
 
 # Build arguments
